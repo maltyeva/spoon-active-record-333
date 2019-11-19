@@ -28,6 +28,6 @@ Rails.application.routes.draw do
   # #restaurants/6
   # delete 'restaurants/:id', to: "restaurants#destroy"
 
-  resources :restaurants, except: [:destroy, :show]
+  resources :restaurants
 
 end

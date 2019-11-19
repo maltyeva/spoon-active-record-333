@@ -1,0 +1,16 @@
+<!-- PATCH  /restaurants/:id(.:format)           restaurants#update -->
+<!-- <form action="/restaurants/2" method="PATCH">
+  <input type="text" name="name" placeholder="name" value="beef and liberty">
+  <input type="text" name="address" placeholder="address" value="xiangyang">
+  <input type="text" name="rating" placeholder="rating" value="5">
+  <input type="submit">
+</form> -->
+<%= form_for(@restaurant) do |f| %>
+  <%= f.label :name, "Enter a name" %>
+  <%= f.text_field :name %>
+  <%= f.label :address, "Enter a address" %>
+  <%= f.text_field :address %>
+  <%= f.label :rating, "Enter a rating" %>
+  <%= f.text_field :rating %>
+  <%= f.submit  %>
+<% end %>
