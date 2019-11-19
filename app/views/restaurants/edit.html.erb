@@ -5,12 +5,4 @@
   <input type="text" name="rating" placeholder="rating" value="5">
   <input type="submit">
 </form> -->
-<%= form_for(@restaurant) do |f| %>
-  <%= f.label :name, "Enter a name" %>
-  <%= f.text_field :name %>
-  <%= f.label :address, "Enter a address" %>
-  <%= f.text_field :address %>
-  <%= f.label :rating, "Enter a rating" %>
-  <%= f.text_field :rating %>
-  <%= f.submit  %>
-<% end %>
+<%= render 'form', restaurant: @restaurant %>
